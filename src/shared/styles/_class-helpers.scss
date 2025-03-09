@@ -30,3 +30,16 @@ $padding-inline-desktop: $padding-inline-tablet;
     max-width: $large-desktop-width;
   }
 }
+
+.section-h2 {
+  padding-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+
+  @include tablet {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
