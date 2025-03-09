@@ -11,9 +11,12 @@ import ComplianceSectionBlock from './ComplianceSectionBlock/ComplianceSectionBl
       to help businesses navigate compliance challenges
     </div>
     <div class="features">
-      <div v-for="(block, index) in COMPLIANCE_SECTION_BLOCKS_DATA" :key="index">
-        <ComplianceSectionBlock :title="block.title" :subtitle="block.subtitle" />
-      </div>
+      <ComplianceSectionBlock
+        v-for="(block, index) in COMPLIANCE_SECTION_BLOCKS_DATA"
+        :key="index"
+        :title="block.title"
+        :subtitle="block.subtitle"
+      />
     </div>
   </section>
 </template>
