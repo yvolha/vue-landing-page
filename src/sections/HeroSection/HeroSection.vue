@@ -5,7 +5,9 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
 <template>
   <div class="container">
     <header class="header">
-      <img src="../../assets/hero/logo.svg" alt="" />
+      <a class="link" href="/" target="_blank">
+        <img src="../../assets/hero/logo.svg" alt="FM Intelligence logo." />
+      </a>
     </header>
     <section class="hero">
       <div class="title-group">
@@ -39,6 +41,7 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
     gap: 100px;
   }
 }
+
 .header {
   padding-bottom: 24px;
 
@@ -48,6 +51,14 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
 
   @include desktop {
     padding-bottom: 96px;
+  }
+}
+
+.link {
+  transition: 150ms;
+
+  &:hover {
+    filter: drop-shadow(2px 4px 6px $link-color-hover);
   }
 }
 
@@ -81,6 +92,7 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
 
   @include desktop {
     padding-bottom: 0;
+    max-width: 636px;
   }
 }
 </style>
