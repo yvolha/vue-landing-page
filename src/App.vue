@@ -1,15 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import HeroSection from './sections/HeroSection/HeroSection.vue'
+</script>
 
 <template>
-  <div class="hi">Template</div>
+  <div class="app-container">
+    <HeroSection></HeroSection>
+  </div>
 </template>
 
-<style lang="scss" scoped>
-.hi {
-  font-size: 12px;
-
-  @include mobile {
-    font-size: 80px;
-  }
+<style lang="scss">
+.app-container {
+  background-color: $background-primary;
 }
 </style>

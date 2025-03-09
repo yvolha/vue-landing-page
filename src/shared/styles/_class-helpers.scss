@@ -1,0 +1,32 @@
+@use './mixins' as *;
+@use './variables' as *;
+
+$padding-block-mobile: 32px;
+$padding-inline-mobile: 16px;
+
+$padding-block-tablet: 64px;
+$padding-inline-tablet: $padding-block-tablet;
+
+$padding-block-desktop: 96px;
+$padding-inline-desktop: $padding-inline-tablet;
+
+.container {
+  color: $font-color-primary;
+
+  padding-block: $padding-block-mobile;
+  padding-inline: $padding-inline-mobile;
+
+  @include tablet {
+    padding-block: $padding-block-tablet;
+    padding-inline: $padding-inline-tablet;
+  }
+
+  @include largeDesktop {
+    margin: auto;
+
+    padding-block: $padding-block-desktop;
+    padding-inline: $padding-inline-desktop;
+
+    max-width: $large-desktop-width;
+  }
+}
