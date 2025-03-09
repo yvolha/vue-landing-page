@@ -55,7 +55,7 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
 }
 
 .link {
-  transition: 150ms;
+  transition: 220ms;
 
   &:hover {
     filter: drop-shadow(2px 4px 6px $link-color-hover);

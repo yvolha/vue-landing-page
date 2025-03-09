@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ButtonBase from '@/shared/components/ButtonBase/ButtonBase.vue'
 import { COMPLIANCE_SECTION_BLOCKS_DATA } from './ComplianceSection.constant'
 import ComplianceSectionBlock from './ComplianceSectionBlock/ComplianceSectionBlock.vue'
 </script>
@@ -18,6 +19,7 @@ import ComplianceSectionBlock from './ComplianceSectionBlock/ComplianceSectionBl
         :subtitle="block.subtitle"
       />
     </div>
+    <ButtonBase />
   </section>
 </template>
 
@@ -49,14 +51,17 @@ import ComplianceSectionBlock from './ComplianceSectionBlock/ComplianceSectionBl
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  margin-bottom: 24px;
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px 64px;
+    margin-bottom: 32px;
   }
 
   @include desktop {
     gap: 64px;
+    margin-bottom: 64px;
   }
 }
 </style>
