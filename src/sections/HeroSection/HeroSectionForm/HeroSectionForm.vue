@@ -10,34 +10,34 @@ const companyName = ref('')
 </script>
 
 <template>
-  <div class="form-wrapper">
-    <form class="form">
-      <div class="title">Get the Latest Industry Insights</div>
-      <div class="inputs">
-        <InputBase input-placeholder="John" input-label="First name" v-model="firstName" />
-        <InputBase input-placeholder="Doe" input-label="Last name" v-model="lastName" />
-        <InputBase
-          input-placeholder="you@company.com"
-          input-label="Email Address"
-          v-model="emailAddress"
-        />
-        <InputBase
-          input-placeholder="Enter company name"
-          input-label="Company"
-          v-model="companyName"
-        />
-      </div>
-      <ButtonBase />
-      <div class="privacy"></div>
-      <div class="terms"></div>
-    </form>
-  </div>
+  <form class="form">
+    <div class="title">Get the Latest Industry Insights</div>
+    <div class="inputs">
+      <InputBase input-placeholder="John" input-label="First name" v-model="firstName" />
+      <InputBase input-placeholder="Doe" input-label="Last name" v-model="lastName" />
+      <InputBase
+        input-placeholder="you@company.com"
+        input-label="Email Address"
+        v-model="emailAddress"
+      />
+      <InputBase
+        input-placeholder="Enter company name"
+        input-label="Company"
+        v-model="companyName"
+      />
+    </div>
+    <ButtonBase />
+    <div class="privacy">
+      By submitting this form, you agree to our <a href="/">Privacy Policy</a>.
+    </div>
+    <div class="terms">
+      This site is protected by reCAPTCHA and the Google
+      <a href="/">Privacy Policy</a> and <a href="/">Terms of Service</a> apply.
+    </div>
+  </form>
 </template>
 
 <style lang="scss" scoped>
-.form-wrapper {
-  border-radius: 16px;
-}
 .form {
   padding: 32px;
   display: flex;
@@ -52,6 +52,16 @@ const companyName = ref('')
   @include tablet {
     padding: 48px;
   }
+
+  @include desktop {
+    max-width: 576px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
 }
 
 .inputs {
@@ -63,6 +73,27 @@ const companyName = ref('')
 
   @include tablet {
     padding-block: 48px 32px;
+  }
+}
+
+.privacy {
+  color: $font-color-secondary;
+  padding-block: 16px 12px;
+}
+
+.terms {
+  color: $font-color-secondary;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: underline;
+  color: $font-color-primary;
+  transition: color 220ms;
+
+  &:hover {
+    color: $link-color-hover;
   }
 }
 </style>

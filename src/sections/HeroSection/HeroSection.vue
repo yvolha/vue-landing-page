@@ -39,6 +39,7 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
   @include desktop {
     flex-direction: row;
     gap: 100px;
+    align-items: center;
   }
 }
 
