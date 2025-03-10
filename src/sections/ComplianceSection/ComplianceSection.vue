@@ -25,6 +25,7 @@ import ComplianceSectionBlock from './ComplianceSectionBlock/ComplianceSectionBl
 
 <style lang="scss" scoped>
 .compliance {
+  position: relative;
   background-color: $background-secondary;
 }
 
