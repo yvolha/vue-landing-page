@@ -141,15 +141,15 @@ import {
 .footnotes {
   grid-area: footnotes;
 
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
   * {
     color: $font-color-secondary;
     font-size: 14px;
     line-height: 22px;
   }
-
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
 
   @include desktop {
     padding-top: 32px;
