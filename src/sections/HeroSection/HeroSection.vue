@@ -10,7 +10,7 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
       </a>
     </header>
     <section class="hero">
-      <div class="title-group">
+      <div>
         <h1 class="title">
           Stay Informed.<br />
           Stay Compliant.
@@ -84,6 +84,8 @@ import HeroSectionForm from './HeroSectionForm/HeroSectionForm.vue'
 }
 
 .subtitle {
+  position: relative;
+  z-index: 1;
   padding-bottom: 24px;
 
   @include tablet {

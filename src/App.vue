@@ -16,6 +16,8 @@ import HeroSection from './sections/HeroSection/HeroSection.vue'
 
 <style lang="scss">
 .app-container {
+  position: relative;
+  overflow: hidden;
   background-color: $background-primary;
 }
 </style>
