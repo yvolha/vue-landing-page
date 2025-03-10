@@ -3,12 +3,14 @@ import ComplianceSection from './sections/ComplianceSection/ComplianceSection.vu
 import FAQSection from './sections/FAQSection/FAQSection.vue'
 import FooterSection from './sections/FooterSection/FooterSection.vue'
 import HeroSection from './sections/HeroSection/HeroSection.vue'
+import PhonesSlider from './sections/PhonesSlider/PhonesSlider.vue'
 </script>
 
 <template>
   <div class="app-container">
     <HeroSection />
     <ComplianceSection />
+    <PhonesSlider />
     <FAQSection />
     <FooterSection />
   </div>
